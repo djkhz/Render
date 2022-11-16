@@ -1,7 +1,7 @@
 #1. create render.yaml
 #2. sample code
 services:
-- types: web
+- type: web
   env: node
   name: fh-prod-backend1
   rep: https://github.com/nwrade/form-hub.git
@@ -9,12 +9,12 @@ services:
   startCommand: cd app/backend; yarn start
   
   
-- types: web
+- type: web
   env: static
   name: fh-prod-frontend1
   
 - types: redis
   name: fh-prod-redis1
  
- - types: db1
+ - type: db1
   name: fh-prod-db1
