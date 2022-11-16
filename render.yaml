@@ -4,7 +4,7 @@ services:
 - type: web
   env: node
   name: fh-prod-backend1
-  rep: https://github.com/nwrade/form-hub.git
+  rep: https://github.com/djkhz/Render.git
   buildCommand: yarn && yarn build --filter=backend
   startCommand: cd app/backend; yarn start
   
