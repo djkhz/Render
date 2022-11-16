@@ -1,3 +1,20 @@
 #1. create render.yaml
 #2. sample code
-healthCheckPath: /healthz
+services:
+- types: web
+  env: node
+  name: fh-prod-backend1
+  rep: https://github.com/nwrade/form-hub.git
+  buildCommand: yarn && yarn build --filter=bcakedn
+  startCommand: cd app/backend; yarn start
+  
+  
+- types: web
+  env: static
+  name: fh-prod-frontend1
+  
+- types: redis
+  name: fh-prod-redis1
+ 
+ - types: db1
+  name: fh-prod-db1
