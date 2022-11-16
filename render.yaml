@@ -4,9 +4,9 @@ services:
 - type: web
   env: node
   name: fh-prod-backend1
-  rep: https://github.com/djkhz/Render.git
-  buildCommand: yarn && yarn build --filter=backend
-  startCommand: cd app/backend; yarn start
+  #rep: https://github.com/djkhz/Render.git
+  #buildCommand: yarn && yarn build --filter=backend
+  #startCommand: cd app/backend; yarn start
   
   
 - type: web
@@ -16,5 +16,5 @@ services:
 - type: redis
   name: fh-prod-redis1
 
-databases:
-  name: fh-prod-db1
+#databases:
+#  name: fh-prod-db1
