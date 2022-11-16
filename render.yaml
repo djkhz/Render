@@ -1,5 +1,6 @@
 #1. create render.yaml
 #2. sample code
+services:
 - type: web
   env: node
   name: fh-prod-backend1
